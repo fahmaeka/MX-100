@@ -46,6 +46,19 @@ $ php -S localhost:2000 -t public
 ```
 
 
+### API Routes
+| HTTP Method	| Path | Action | Scope | Desciption  |
+| ----- | ----- | ----- | ---- |------------- |
+| GET      | /proposal | index | proposal:list | Get all proposal
+| GET      | /proposal?jobs_code= | index | proposal:params | Get proposal detail and get all freelancer partisipan
+| POST     | /proposal | store | proposal:store | Create an proposal with authenticated
+| GET      | /proposal/{user_id} | show | proposal:read |  Fetch an jobs by id with authenticated
+|
+| POST      | /login | index | login:index | Login freelance / companya to get api_token
+| POST      | /register-company | index | login:registerFreelancer | create freelance and get api_token
+| POST      | /register-freelance | index | login:registerCompany | create company and get api_token
+
+
 #### Codeception
 TDD from MX100:
 ```bash
