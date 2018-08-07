@@ -1,21 +1,30 @@
-# Lumen PHP Framework
+# MX100 - API Job Portal
 
-[![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
-[![Total Downloads](https://poser.pugx.org/laravel/lumen-framework/d/total.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/lumen-framework/v/stable.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/lumen-framework/v/unstable.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![License](https://poser.pugx.org/laravel/lumen-framework/license.svg)](https://packagist.org/packages/laravel/lumen-framework)
+As back end developer you must provide API to
+● Enable freelance to submit proposal to jo post
+● Enable company to view proposal for their job post
 
-Laravel Lumen is a stunningly fast PHP micro-framework for building web applications with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Lumen attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as routing, database abstraction, queueing, and caching.
+## Getting Started
 
-## Official Documentation
+First, clone the repo:
+```bash
+$ git clone https://github.com/fahmaeka/MX-100.git
+$ cd MX100
+```
 
-Documentation for the framework can be found on the [Lumen website](http://lumen.laravel.com/docs).
+#### Lummen Homestead
+You can use Laravel Homestead globally or per project for local development. Follow the [Installation Guide](https://lumen.laravel.com/docs/5.3/installation).
 
-## Security Vulnerabilities
+#### Configure the Environment
+Edit `.env` file:
+```
+$ nano .env
+```
+If you want you can edit database name, database username and database password.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Lumen framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+#### Import databases
+Run code on terminal:
+```
+$ mysql -u <username> -p <databasename> < <filename.sql>
+```
+If you want you can edit database name, database username and database password.
